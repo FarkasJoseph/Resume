@@ -1,0 +1,240 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingBig}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Joseph Farkas} \\ \vspace{1pt}
+    \small (770) 990-5495 $|$ \href{mailto:josephfarkas@gatech.edu}{\underline{josephfarkas@gatech.edu}} $|$ 
+    \href{https://www.linkedin.com/in/farkasjoseph/}{\underline{linkedin.com/in/farkasjoseph}} $|$
+    \href{https://github.com/farkasjoseph}{\underline{github.com/farkasjoseph}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheadingBig
+      {Georgia Institute of Technology}{Atlanta, GA}
+      {Bachelor of Science in Computer Science, Devices and Intelligence (International Plan)}{May 2027}
+      {Minors in Robotics and German}{GPA: 4.00}
+      \resumeItemListStart
+        \resumeItem{Relevant Coursework: Data Structures and Algorithms, Objects and Design}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Guidance, Navigation and Control}{Aug. 2025 -- Present}
+      {Propulsive Landers @ Georgia Tech}{Atlanta, GA}
+      \resumeItemListStart
+        \resumeItem{Applying PID+LQR and nonlinear MPC to optimize rocket’s fuel usage in real time powered descent}
+        \resumeItem{Porting on-the-fly convexification algorithm from Python to Rust for on-device trajectory replanning}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {RoboCup: Autonomous Software Team}{Aug. 2025 -- Present}
+      {RoboJackets @ Georgia Tech}{Atlanta, GA}
+      \resumeItemListStart
+        \resumeItem{Developing multi-agent pathfinding, obstacle avoidance and task allocation in C++ for 6v6 robot soccer}
+        \resumeItem{Building ROS stack to interface with telemetry, vision, and low-level control systems}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {UX Assistant}{Aug. 2025 -- Present}
+      {Georgia Tech PACE Supercomputing Center}{Atlanta, GA}
+      \resumeItemListStart
+        \resumeItem{Performing incident triage for researchers using high-performance Debian computing systems}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Intern}{Aug. 2024 -- May 2025}
+      {Viasat Inc.}{Duluth, GA}
+      \resumeItemListStart
+        \resumeItem{Developed C/C++ firmware and Typescript frontend for prototype three-axis satellite antennas}
+        \resumeItem{Improved responsiveness of ephemeris loading by 90\% through multithreading and upgraded XML search}
+        \resumeItem{Built algorithms for analyzing signal quality and atmospheric modeling}
+        \resumeItem{Assembled and wired rig to test cable fatigue over 100,000 accelerated cycles}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {Software Department Lead}{Oct. 2021 -- May 2025}
+      {North Gwinnett Robotics}{Suwanee, GA}
+      \resumeItemListStart
+        \resumeItem{Trained 15 students with limited prior experience in utilizing C++ to process sensor input and control robots}
+        \resumeItem{Designed and manufactured robot over eight weeks, coordinating to manage six-figure finances}
+        \resumeItem{World Competition Divisional Champions \& Autonomous Award, 3x State Champions}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Natural ASL Communication} $|$ \emph{Python, Docker, TensorFlow, Jupyter, OpenCV}}{Sep. 2023 -- Feb. 2024}
+          \resumeItemListStart
+            \resumeItem{Applied action-based convolution neural networks on Google's Mediapipe holistic landmark model for OpenCV}
+            \resumeItem{Interpreted 40 ASL phrases and 5 “moods” using facial language for natural English translation and emotive TTS}
+            \resumeItem{Won second place at regional science fair}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Autonomus Alignment using Holonomic Kinematics and CV} $|$ \emph{C++, Java, Aruco}}{Aug. 2023 -- May 2025}
+          \resumeItemListStart
+            \resumeItem{Applied second-order kinematics and jerk limiting to replicate S-curve profile for discretized holonomic drive}
+            \resumeItem{Fused CV estimates from fiducials with filtered odometry using a state-space model for real-time robot location}
+            \resumeItem{Developed a heuristic for scaling weight of vision data and latency compensation}
+            \resumeItem{Allowed competition robot to align to any scoring position with $<$ 1cm accuracy regardless of starting state}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Computer Languages}{: Java, Python, C/C++, Rust, JavaScript, HTML/CSS, Dart} \\
+     \textbf{Frameworks \& Libraries}{: ROS, React, Node.js, JUnit, Flutter, OpenCV, Aruco, Jupyter, pandas, Matplotlib} \\
+     \textbf{Developer Tools}{: Git/GitHub, Linux, Docker, Google Firebase, Android Studio, VS Code, Visual Studio, IntelliJ} \\
+     \textbf{CAD/CAM}{: Fusion 360, SolidWorks, Autodesk Inventor, 3D Printing, Laser Cutting, CNC Milling} \\
+     \textbf{Foreign Languages}{: German (Intermediate - B2), Hungarian (Native)}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
