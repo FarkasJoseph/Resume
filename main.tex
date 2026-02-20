@@ -136,7 +136,7 @@
     \resumeSubheadingBig
       {Georgia Institute of Technology}{Atlanta, GA}
       {Bachelor of Science in Computer Science, Devices and Intelligence}{Expected May 2027}
-      {Minors in Robotics and German. Concert Orchestra Member.}{GPA: 4.00}
+      {Minors in Robotics and German. Concert Orchestra Member}{GPA: 4.00}
       \resumeItemListStart
         \resumeItem{Relevant Coursework: Data Structures and Algorithms, Objects and Design, Robotics and Perception}
       \resumeItemListEnd
@@ -147,15 +147,18 @@
 \section{Professional Experience}
   \resumeSubHeadingListStart
       
+  
       \resumeSubheading
-      {UX Assistant}{Aug 2025 -- Present}
-      {Georgia Tech PACE High Performance Computing Center}{Atlanta, GA}
+      {Autonomous Systems Lead, Software Mentor}{Oct 2021 -- Present}
+      {North Gwinnett Robotics}{Suwanee, GA}
       \resumeItemListStart
-        \resumeItem{Supporting roughly 5,000 researchers with incident triage across high-performance computing systems}
-        \resumeItem{Handling 20+ tickets weekly, resolving issues independently using Linux tools and debugging skills}
-        % \resumeItem{Leading initiatives to implement locally run LLMs in unique research, such as robotics and computer vision}
+        \resumeItem{Mentoring \~15 students with limited experience to use C++ to process sensor input and control robots over CAN}
+        \resumeItem{Integrated localization using computer vision (Apriltag fiducials) to power fully autonomous scoring}
+        \resumeItem{Implemented on-the-fly pathfinding and obstacle avoidance using A* with kinematic heuristics and telemetry}
+        % \resumeItem{Collaborating with engineers to design and manufacture robot over eight weeks while managing six-figure finances}
+        \resumeItem{World Comp. Autonomous Award \& Division Champions. \textbf{Rated \#1 globally for autonomous performance}}
       \resumeItemListEnd
-      
+ 
 % -----------Multiple Positions Heading-----------
 %    \resumeSubSubheading
 %     {Software Engineer I}{Oct 2014 - Sep 2016}
@@ -175,22 +178,31 @@
         \resumeItem{Built algorithms for analyzing signal quality and atmospheric modeling; integrated CI pipelines for validation}
         % \resumeItem{Assembled and wired rig to test cable fatigue over 100,000 accelerated cycles}
       \resumeItemListEnd
-
+     
       \resumeSubheading
-      {Autonomous Systems Lead, Software Mentor}{Oct 2021 -- Present}
-      {North Gwinnett Robotics}{Suwanee, GA}
+      {UX Assistant}{Aug 2025 -- Present}
+      {Georgia Tech PACE High Performance Computing Center}{Atlanta, GA}
       \resumeItemListStart
-        \resumeItem{Mentoring \~15 students with limited experience to use C++ to process sensor input and control robots over CAN}
-        \resumeItem{Integrated localization using computer vision (Apriltag fiducials) to power fully autonomous scoring}
-        \resumeItem{Implemented on-the-fly pathfinding and obstacle avoidance using A* with kinematic heuristics and telemetry}
-        % \resumeItem{Collaborating with engineers to design and manufacture robot over eight weeks while managing six-figure finances}
-        \resumeItem{World Comp. Autonomous Award \& Division Champions. \textbf{Rated \#1 globally for autonomous performance}}
+        \resumeItem{Supporting roughly 5,000 researchers with incident triage across high-performance computing systems}
+        \resumeItem{Handling 20+ tickets weekly, resolving issues independently using Linux tools and debugging skills}
+        % \resumeItem{Leading initiatives to implement locally run LLMs in unique research, such as robotics and computer vision}
       \resumeItemListEnd
+      
 
   \resumeSubHeadingListEnd
   
 \section{Activites}
   \resumeSubHeadingListStart
+
+        \resumeSubheading
+      {RoboCup: Autonomous Software Team}{Aug 2025 -- Present}
+      {RoboJackets @ Georgia Tech}{Atlanta, GA}
+      \resumeItemListStart
+        \resumeItem{Building multi-agent pathfinding, obstacle avoidance and task allocation in C++ for 6v6 robot soccer}
+        \resumeItem{Strengthening ROS stack to interface with telemetry, vision, and low-level control systems}
+      \resumeItemListEnd
+
+
     \resumeSubheading
       {Guidance, Navigation and Control Team}{Aug 2025 -- Present}
       {Propulsive Landers @ Georgia Tech}{Atlanta, GA}
@@ -202,19 +214,30 @@
         % \resumeItem{Prototyping with Monoprop UAV (drone), aiming for 60m hop with rocket by Spring 2026}
       \resumeItemListEnd
 
-      \resumeSubheading
-      {RoboCup: Autonomous Software Team}{Aug 2025 -- Present}
-      {RoboJackets @ Georgia Tech}{Atlanta, GA}
-      \resumeItemListStart
-        \resumeItem{Building multi-agent pathfinding, obstacle avoidance and task allocation in C++ for 6v6 robot soccer}
-        \resumeItem{Strengthening ROS stack to interface with telemetry, vision, and low-level control systems}
-      \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 
 %-----------PROJECTS-----------
 \section{Projects, Presentations \& Hackathons}
     \resumeSubHeadingListStart
+
+                      \resumeProjectHeading
+             {\textbf{Holonomic Auto-Alignment using CV Localization} $|$ \emph{C++, Java, ArUco}}{Aug 2023 -- May 2025}
+          \resumeItemListStart
+            \resumeItem{Applied second-order kinematics and jerk limiting to replicate S-curve profile for discretized holonomic drive}
+            \resumeItem{Fused CV estimates from fiducials with filtered odometry using a state-space model for real-time robot location}
+            % \resumeItem{Developed a heuristic for scaling weight of vision data and for latency compensation}
+            \resumeItem{Allowed competition robot to align to any scoring position with $<$ 1cm accuracy regardless of starting state}
+          \resumeItemListEnd
+
+          
+            \resumeProjectHeading
+          {\textbf{Foundations of Autonomous Programming} $|$ \emph{Georgia FIRST Robotics Symposium}}{Sept 2024}
+          \resumeItemListStart
+            \resumeItem{Presented at statewide symposium on methods for teaching autonomous programming to high school students}
+          \resumeItemListEnd
+
+
           \resumeProjectHeading
           {\textbf{so$\varphi$: Real-time Adaptive Learning } $|$ \emph{Nexhacks (largest hackathon on the East Coast)} $|$ \href{https://devpost.com/software/sophia-c3qw4b}{\textbf{Devpost}}}{Jan 2025}          
           \resumeItemListStart
@@ -239,22 +262,6 @@
         %     \resumeItem{Built a Deno backend with Gemini API for web scraping to extract and analyze subscription data}
         % \resumeItemListEnd
 
-                  \resumeProjectHeading
-             {\textbf{Holonomic Auto-Alignment using CV Localization} $|$ \emph{C++, Java, ArUco}}{Aug 2023 -- May 2025}
-          \resumeItemListStart
-            \resumeItem{Applied second-order kinematics and jerk limiting to replicate S-curve profile for discretized holonomic drive}
-            \resumeItem{Fused CV estimates from fiducials with filtered odometry using a state-space model for real-time robot location}
-            % \resumeItem{Developed a heuristic for scaling weight of vision data and for latency compensation}
-            \resumeItem{Allowed competition robot to align to any scoring position with $<$ 1cm accuracy regardless of starting state}
-          \resumeItemListEnd
-
-
-
-            \resumeProjectHeading
-          {\textbf{Foundations of Autonomous Programming} $|$ \emph{Georgia FIRST Robotics Symposium}}{Sept 2024}
-          \resumeItemListStart
-            \resumeItem{Presented at statewide symposium on methods for teaching autonomous programming to high school students}
-          \resumeItemListEnd
 
 
           \resumeProjectHeading
